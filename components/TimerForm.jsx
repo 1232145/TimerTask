@@ -23,15 +23,11 @@ function TimerForm({ id, title, project, handleFormCreate, handleFormClose, hand
   
   const handleOnClick = (type) => {
     if (type === 'Cancel') 
-      handleCancel();
+      handleFormClose();
     if (type === 'Update') 
       handleUpdate();
     if (type === 'Create') 
       handleCreate();
-  }
-
-  const handleCancel = () => {
-    handleFormClose();
   }
 
   const handleUpdate = () => {
