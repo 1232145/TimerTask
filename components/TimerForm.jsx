@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { StyleSheet, View, ScrollView, Text, TextInput} from 'react-native'
+import { StyleSheet, View, Text, TextInput} from 'react-native'
 import TimerButton from './TimerButton';
 
 function TimerForm({ id, title, project, handleFormCreate, handleFormClose, handleTimerUpdate }) {
@@ -14,17 +14,14 @@ function TimerForm({ id, title, project, handleFormCreate, handleFormClose, hand
 
   const handleOnChange = (text, type) => {
     if (type === 'title') {
-      // console.log(text);
       setInputTitle(text);
     }
     if (type === 'project') {
-      // console.log(text);
       setInputProject(text);
     }
   }
   
   const handleOnClick = (type) => {
-    // console.log("This belongs to the TimerForm function")
     if (type === 'Cancel') 
       handleCancel();
     if (type === 'Update') 
