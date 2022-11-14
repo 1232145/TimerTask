@@ -11,7 +11,6 @@ function ToggleableTimerForm({ isOpen, onFormSubmit }) {
   }
 
   const handleFormCreate = (timer) => {
-    console.log(timer);
     onFormSubmit(timer);
     setVisibility(!visibility)
   }
